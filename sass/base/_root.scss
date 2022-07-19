@@ -1,0 +1,26 @@
+
+.no-scroll {
+    overflow: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+body {
+    font-family: Roboto, sans-serif;
+    @include font();
+    color: var(--txt-cl);
+   
+}

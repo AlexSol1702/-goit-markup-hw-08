@@ -1,0 +1,87 @@
+.nav__list,
+.contact {
+    @include font(500, 14px, 1.14);
+
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:focus,
+    &:hover {
+            color: var(--accent);
+            cursor: pointer;
+        }
+}
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+ .nav__item {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+ }
+
+.nav__link {
+    display: block;
+    color: var(--titl-cl);
+
+    &.current,
+    &:hover,
+    &:focus {
+        color: var(--accent);
+        cursor: pointer;
+    }
+
+    @include transition(color);
+}
+.nav__link::after {
+    content:"";
+    display: none;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    
+    background-color: var(--accent);
+}
+.current.nav__link::after {
+    display: block;
+}
+.contact {
+    margin-left: auto;
+
+    &__item:last-child {
+        margin-left: 50px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        color: inherit;
+
+        
+
+        @include transition(color);
+        @include transition(fill);
+        
+    }
+}
+
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
