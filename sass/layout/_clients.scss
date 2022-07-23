@@ -1,12 +1,30 @@
 .clients {
-    --item: 6;
+    @media screen and (min-width: 480px) {
+        --item: 2;
+    }
+
+    @media screen and (min-width: 768px) {
+        --item: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --item: 6;
+    }
+    
 
     &__title { 
-        margin-bottom: 50px; 
+        
+        @include font(700, 28px, 1.14);
+        margin-bottom: 30px; 
+        
     
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        
+        
+        @media screen and (min-width: 1200px) {
+            @include font(700, 36px, 1.16);
+            margin-bottom: 50px;
+        }
+        
         text-align: center;
         color: var(--titl-cl);
     

@@ -20,8 +20,9 @@
 
   <body data-body>
     <!--top line-->
+
     <header>
-      <div class="container">
+      <div class="container header">
         <div class="logotype">
           <a href="./index.html" class="link"
             ><span class="logotype__logo">Web</span
@@ -59,11 +60,22 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn__svg" width="40" height="40">
+            <use class="menu__open" href="./imges/icons.svg#menu-icon"></use>
+            <use
+              class="menu__closed"
+              href="./imges/icons.svg#close-menu-icon"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <!--main-->
     <main>
       <!--hat-->
+
       <section class="hat">
         <div class="container">
           <h1 class="hat__title">
@@ -75,6 +87,7 @@
           </button>
         </div>
       </section>
+
       <!-- Modal window -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -281,7 +294,7 @@
                   <img
                     src="./imges/team/img-1.jpg"
                     alt="team_1"
-                    width="270"
+                    width="100%"
                     height="260"
                   />
                 </div>
@@ -341,7 +354,7 @@
                   <img
                     src="./imges/team/img-2.jpg"
                     alt="team_2"
-                    width="270"
+                    width="100%"
                     height="260"
                   />
                 </div>
@@ -401,7 +414,7 @@
                   <img
                     src="./imges/team/img-3.jpg"
                     alt="team_3"
-                    width="270"
+                    width="100%"
                     height="260"
                   />
                 </div>
@@ -461,7 +474,7 @@
                   <img
                     src="./imges/team/img-4.jpg"
                     alt="team_4"
-                    width="270"
+                    width="100%"
                     height="260"
                   />
                 </div>
@@ -566,7 +579,7 @@
     <!-- footer -->
     <footer class="foot">
       <div class="container foot__container">
-        <div>
+        <div class="tablet-position">
           <div class="logotype foot__logotype">
             <a href="./index.html" class="link"
               ><span class="logotype__logo">Web</span
@@ -618,13 +631,14 @@
             </li>
           </ul>
         </div>
+
         <div class="subscribe">
           <label for="subscribe" class="subscribe__title"
             >Подпишитесь на рассылку</label
           >
           <form>
             <ul class="subscribe__list list">
-              <li>
+              <li class="subscribe__list--item">
                 <input
                   class="subscribe__mail"
                   type="email"

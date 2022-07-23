@@ -2,10 +2,21 @@
     background-color: var(--bcg-dark);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__container {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            position: relative;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+        
+    }
+    
 }
-.foot__container {
-    display: flex;
-}
+
+
 .foot__logotype {
     margin: 0;
     padding-bottom: 20px;
@@ -23,6 +34,15 @@
     line-height: 24px;
 }
 
+.foot__list {
+    text-align: center;
+    padding-bottom: 60px; 
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+
+    }
+}
 .foot__list>li:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -41,19 +61,46 @@
     cursor: pointer;
 }
 }
+.tablet-position {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        position: relative;
+        top: 0px;
+        left: 60px;
+
+        width: 230px;
+   }
+}
 .join {
-    margin-left: 70px; 
+    margin-bottom: 60px;
 
-    color: var(--primery-cl);
-
-    @include font(700, 14px, 1.14);
-    
-    text-transform: uppercase;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+         position: absolute;
+         top: 5px;
+         right: 89px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 70px;   
+    }
 }
 .join__title {
     display: block;
-    padding-top: 12px;
     margin-bottom: 20px;
+    
+
+    @include font(700, 14px, 1.14);
+    text-transform: uppercase;
+    text-align: center;
+
+    color: var(--primery-cl);
+    
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    
+        text-align: left;
+          
+    }
+    
 }
 .foot .social__link {
     fill: var(--primery-cl);

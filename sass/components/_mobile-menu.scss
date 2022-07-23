@@ -1,0 +1,26 @@
+.menu-btn {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    border: 0;
+    padding: 0;
+    background-color: var(--primery-cl);
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    &:hover .menu-btn__svg,
+    &:focus .menu-btn__svg {
+        fill: var(--accent);
+    }
+}
+.menu__open {
+    width: 24px;
+    height: 16px;
+}
+.menu__closed {
+    width: 19px;
+    height: 19px;
+}

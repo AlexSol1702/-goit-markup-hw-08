@@ -12,8 +12,11 @@
     &__title {
         color: var(--primery-cl);
 
-        @include font(900, 44px, 1.36);
-        
+        @include font(900, 26px, 1.6);
+
+        @media screen and (min-width: 1200px) {
+            @include font(900, 44px, 1.36);
+        }
         text-transform: uppercase;
     
         margin-bottom: 30px;

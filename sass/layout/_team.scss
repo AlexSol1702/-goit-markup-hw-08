@@ -1,14 +1,32 @@
 .team {
-    --item: 4;
+    @media screen and (min-width: 480px) {
+        --item: 1;
+    }
+    
+
+        @media screen and (min-width: 768px) {
+            --item: 2;
+        }
+
+         @media screen and (min-width: 1200px) {
+        --item: 4;
+        }
+   
     background-color: var(--bcg-light);
 
     &__title {
-        @include font(700, 36px, 1.16);
+        @include font(700, 28px, 1.14);
         
         text-align: center;
     
         color: var(--titl-cl);
-        margin-bottom:  50px;
+        margin-bottom:  30px;
+
+        @media screen and (min-width: 1200px) {
+            @include font(700, 36px, 1.16);
+
+            margin-bottom:  50px;
+        }
     }
 }
 

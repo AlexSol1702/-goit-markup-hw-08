@@ -1,5 +1,15 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
     <defs>
+        <!-- Mobile menu -->
+        <symbol id="menu-icon" viewBox="0 0 24 16">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+        </symbol>
+
+        <symbol id="close-menu-icon" viewBox="0 0 40 40">
+            <path
+                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" />
+        </symbol>
         <!-- peculiarities -->
         <symbol id="icon-antenna" viewBox="0 0 32 32">
             <path fill="#212121" style="fill:var(--color1, #212121)"

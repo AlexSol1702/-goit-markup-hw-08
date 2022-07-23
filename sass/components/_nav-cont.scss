@@ -1,5 +1,8 @@
 .nav__list,
 .contact {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     @include font(500, 14px, 1.14);
 
     display: flex;
@@ -7,16 +10,7 @@
     margin-bottom: 0;
 }
 
-.contact__item {
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    &:focus,
-    &:hover {
-            color: var(--accent);
-            cursor: pointer;
-        }
-}
 .nav__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -54,10 +48,32 @@
     display: block;
 }
 .contact {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+    }
     margin-left: auto;
 
+    &__item {
+        @media screen and (min-width:1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        
+    
+        &:focus,
+        &:hover {
+                color: var(--accent);
+                cursor: pointer;
+            }
+    }
     &__item:last-child {
-        margin-left: 50px;
+        margin-top: 10px;
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+            margin-left: 50px;
+        }
+        
+        
     }
     &__link {
         display: flex;
