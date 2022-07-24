@@ -12,7 +12,7 @@
         
         
         @include font(400, 12px, 1.1);
-        letter-spacing: 3%;
+        
         @media screen and (min-width: 1200px) {
             @include font(400, 14px, 1.7);
         }

@@ -11,7 +11,7 @@
     background-color: transparent;
     
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     top: 10px;
     right: 10px;
 
@@ -38,6 +38,7 @@
 .menu-container {
     display: none;
     position: fixed;
+    z-index: 4;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,7 +50,7 @@
     background-color: var(--primery-cl);
     &.is-open {
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 

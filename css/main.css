@@ -339,7 +339,6 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1;
-  letter-spacing: 3%;
 }
 @media screen and (min-width: 1200px) {
   .agreement__txt {
@@ -651,7 +650,7 @@ body {
   padding: 0;
   background-color: transparent;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   top: 10px;
   right: 10px;
 }
@@ -681,6 +680,7 @@ body {
 .menu-container {
   display: none;
   position: fixed;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 100%;
@@ -773,16 +773,51 @@ header > .container {
 }
 
 .hat {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  max-width: 1600px;
+  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bcg-dark);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/Img.jpg);
-  background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/Img.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-sm.jpg);
+  background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-sm.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hat {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-sm@2x.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-sm@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hat {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-md.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-md.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hat {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-md@2x.png);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-md@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hat {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-lg.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-lg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hat {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gr-cl)), to(var(--gr-cl))), url(../imges/hat/img-lg@2x.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-lg@2x.jpg);
+  }
 }
 .hat__title {
   color: var(--primery-cl);
@@ -1142,6 +1177,7 @@ header > .container {
 }
 .filters__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filters__btn {
@@ -1222,6 +1258,7 @@ header > .container {
 
 .thumb__txt {
   position: absolute;
+  z-index: 3;
   bottom: 0;
   width: 100%;
   height: 100%;

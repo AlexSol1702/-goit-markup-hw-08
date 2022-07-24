@@ -62,6 +62,78 @@
             >
           </li>
         </ul>
+
+        <!-- Mobile menu -->
+
+        <div class="mobile-menu">
+          <button
+            class="menu-btn is-open"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="menu-btn__svg"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="menu__open" href="./imges/icons.svg#menu-icon"></use>
+              <use
+                class="menu__closed"
+                href="./imges/icons.svg#close-menu-icon"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container is-open" data-menu>
+            <nav class="mob-nav">
+              <ul class="mob-nav__list list">
+                <li class="mob-nav__item">
+                  <a href="./index.html" class="mob-nav__link link current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a href="./portfolio.html" class="mob-nav__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-nav__item">
+                  <a href="#" class="mob-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="mob-contact list">
+              <li class="mob-contact__item">
+                <a href="tel:+380961111111" class="mob-contact__link link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contact__link link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social list">
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Instagram</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--main-->
@@ -91,12 +163,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-1-sm.jpg    1x,
+                        ./imges/portfolio/img-1-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-1-md.jpg    1x,
+                        ./imges/portfolio/img-1-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-1-lg.jpg    1x,
+                        ./imges/portfolio/img-1-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-1-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -112,12 +212,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-2.jpg"
-                    alt="Игроки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-2-sm.jpg    1x,
+                        ./imges/portfolio/img-2-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-2-md.jpg    1x,
+                        ./imges/portfolio/img-2-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-2-lg.jpg    1x,
+                        ./imges/portfolio/img-2-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-2-sm.jpg"
+                      alt="Игроки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -135,12 +263,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-3-sm.jpg    1x,
+                        ./imges/portfolio/img-3-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-3-md.jpg    1x,
+                        ./imges/portfolio/img-3-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-3-lg.jpg    1x,
+                        ./imges/portfolio/img-3-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-3-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -158,12 +314,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-4-sm.jpg    1x,
+                        ./imges/portfolio/img-4-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-4-md.jpg    1x,
+                        ./imges/portfolio/img-4-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-4-lg.jpg    1x,
+                        ./imges/portfolio/img-4-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-4-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -181,12 +365,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-5.jpg"
-                    alt="Две коробочки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-5-sm.jpg    1x,
+                        ./imges/portfolio/img-5-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-5-md.jpg    1x,
+                        ./imges/portfolio/img-5-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-5-lg.jpg    1x,
+                        ./imges/portfolio/img-5-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-5-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -204,12 +416,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-6.jpg"
-                    alt="Монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-6-sm.jpg    1x,
+                        ./imges/portfolio/img-6-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-6-md.jpg    1x,
+                        ./imges/portfolio/img-6-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-6-lg.jpg    1x,
+                        ./imges/portfolio/img-6-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-6-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -227,12 +467,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-7.jpg"
-                    alt="Раскрытая книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-7-sm.jpg    1x,
+                        ./imges/portfolio/img-7-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-7-md.jpg    1x,
+                        ./imges/portfolio/img-7-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-7-lg.jpg    1x,
+                        ./imges/portfolio/img-7-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-7-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -250,12 +518,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-8.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-8-sm.jpg    1x,
+                        ./imges/portfolio/img-8-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-8-md.jpg    1x,
+                        ./imges/portfolio/img-8-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-8-lg.jpg    1x,
+                        ./imges/portfolio/img-8-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-8-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -271,12 +567,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/portfolio/img-9.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/portfolio/img-9-sm.jpg    1x,
+                        ./imges/portfolio/img-9-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/portfolio/img-9-md.jpg    1x,
+                        ./imges/portfolio/img-9-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/portfolio/img-9-lg.jpg    1x,
+                        ./imges/portfolio/img-9-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/portfolio/img-9-sm.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -380,5 +704,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

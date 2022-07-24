@@ -317,30 +317,60 @@
           <h2 class="doing__title">Чем мы занимаемся</h2>
           <ul class="list grid">
             <li class="grid__item doing__item">
-              <img
-                src="./imges/what-are-we-doing/box_1.jpg"
-                alt="box_1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imges/doing/img-1-sm.jpg    1x,
+                    ./imges/doing/img-1-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./imges/doing/img-1-sm.jpg"
+                  alt="box_1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="doing__text">Десктопные приложения</p>
             </li>
             <li class="grid__item doing__item">
-              <img
-                src="./imges/what-are-we-doing/box_2.jpg"
-                alt="box_2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imges/doing/img-2-sm.jpg    1x,
+                    ./imges/doing/img-2-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./imges/doing/img-2-sm.jpg"
+                  alt="box_2"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="doing__text">Мобильные приложения</p>
             </li>
             <li class="grid__item doing__item">
-              <img
-                src="./imges/what-are-we-doing/box_3.jpg"
-                alt="box_3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./imges/doing/img-3-sm.jpg    1x,
+                    ./imges/doing/img-3-sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./imges/doing/img-3-sm.jpg"
+                  alt="box_3"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="doing__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -354,12 +384,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/team/img-1.jpg"
-                    alt="team_1"
-                    width="100%"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/team/img-1-sm.jpg    1x,
+                        ./imges/team/img-1-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/team/img-1-md.jpg    1x,
+                        ./imges/team/img-1-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/team/img-1-lg.jpg    1x,
+                        ./imges/team/img-1-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/team/img-1-lg.jpg"
+                      alt="team_1"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title">Игорь Демьяненко</h3>
@@ -414,12 +472,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/team/img-2.jpg"
-                    alt="team_2"
-                    width="100%"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/team/img-2-sm.jpg    1x,
+                        ./imges/team/img-2-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/team/img-2-md.jpg    1x,
+                        ./imges/team/img-2-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/team/img-2-lg.jpg    1x,
+                        ./imges/team/img-2-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/team/img-2-lg.jpg"
+                      alt="team_2"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title">Ольга Репина</h3>
@@ -474,12 +560,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/team/img-3.jpg"
-                    alt="team_3"
-                    width="100%"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/team/img-3-sm.jpg    1x,
+                        ./imges/team/img-3-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/team/img-3-md.jpg    1x,
+                        ./imges/team/img-3-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/team/img-3-lg.jpg    1x,
+                        ./imges/team/img-3-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/team/img-3-lg.jpg"
+                      alt="team_3"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title">Николай Тарасов</h3>
@@ -534,12 +648,40 @@
             <li class="grid__item">
               <article class="card">
                 <div class="card__thumb">
-                  <img
-                    src="./imges/team/img-4.jpg"
-                    alt="team_4"
-                    width="100%"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./imges/team/img-4-sm.jpg    1x,
+                        ./imges/team/img-4-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imges/team/img-4-md.jpg    1x,
+                        ./imges/team/img-4-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./imges/team/img-4-lg.jpg    1x,
+                        ./imges/team/img-4-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./imges/team/img-4-lg.jpg"
+                      alt="team_4"
+                      width="450"
+                      height="460"
+                    />
+                  </picture>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title">Михаил Ермаков</h3>
