@@ -18,9 +18,13 @@
     margin-bottom: 10px;
 
     @include font(700, 14px, 1.14);
-    
+    text-align: center;
     text-transform: uppercase;
     color: var(--titl-cl);
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 &__icon-bg {
     display: flex;

@@ -69,15 +69,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container {
-  max-width: 100%;
+  width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -617,7 +620,7 @@ body {
   }
 }
 .subscribe__mail {
-  min-width: 100%;
+  width: 450px;
   height: 50px;
   padding: 12px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -630,6 +633,11 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 450px) {
+  .subscribe__mail {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mail {
@@ -857,8 +865,14 @@ header > .container {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: var(--titl-cl);
+}
+@media screen and (min-width: 768px) {
+  .peculiarities__title {
+    text-align: left;
+  }
 }
 .peculiarities__icon-bg {
   display: -webkit-box;
