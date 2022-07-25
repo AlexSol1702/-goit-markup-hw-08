@@ -712,7 +712,7 @@ body {
   line-height: 1.1;
   color: var(--titl-cl);
 }
-.mob-nav__link:hover, .mob-nav__link:focus {
+.mob-nav__link.current, .mob-nav__link:hover, .mob-nav__link:focus {
   color: var(--accent);
 }
 
