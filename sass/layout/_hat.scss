@@ -10,36 +10,36 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-sm.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-mob.jpg);
 
     
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-sm@2x.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-mob@2x.jpg);
     }
 
     @media screen and (min-width: 768px) {
-        background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-md.jpg);
+        background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-tab.jpg);
 
         @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-md@2x.png);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-tab@2x.jpg);
     }
         
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-lg.jpg);
+        background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-desk.jpg);
 
         @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/img-lg@2x.jpg);
+    background-image: linear-gradient(var(--gr-cl), var(--gr-cl)), url(../imges/hat/hat-desk@2x.jpg);
     }
 
         padding-top: 200px;
